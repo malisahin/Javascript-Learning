@@ -29,7 +29,7 @@ Conditions.prototype.ternaryOperator = function () {
     console.log(elvisLives);
 }
 
-Conditions.prototype.switchCase = function () {
+Conditions.prototype.switchCase = function (expr) {
     console.log("The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case.");
     /*
     switch (expression) {
