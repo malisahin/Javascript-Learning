@@ -4,10 +4,9 @@
 // Promises
 
 
+/*-------------------------- CALLBACKS --------------------------*/
 
-/* ------------------------------ Bad Code  ------------------------------------*/
-
-/*---------- CALLBACKS ----------*/
+/* --------------- Bad Code  -----------*/
 
 setTimeout(function () {
     console.log("First");
@@ -18,3 +17,26 @@ setTimeout(function () {
         }, 1000);
     }, 1000);
 }, 1000);
+
+
+/* --------------- Good Code  -----------*/
+
+function one(cb) {
+    console.log("One");
+    setTimeout(cb, 1000);
+} 
+function two(cb) {
+    console.log("Two");
+    setTimeout(cb, 1000);
+} 
+
+function Three(cb) {
+    console.log("Three");
+    setTimeout(cb, 1000);
+} 
+
+one(function() {
+    two(three);
+});
+
+
