@@ -1,6 +1,7 @@
 
+
+/*************************  @param ARGUMENT_OBJECT  ***************************** */
 /**
- *   @param       ARGUMENT_OBJECT
  *  Available in all functions
  *  Like an Array, but not really an arrray
  */
@@ -26,11 +27,8 @@ function toSum(args) {
 }
 
 
+/*************************  @param CHAINING  ***************************** */
 
-
-/**
- *   @param CHAINING
- */
 
 var Calc = function (start) {
     this.add = function (x) {
